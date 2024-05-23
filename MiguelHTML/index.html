@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Migol's Guitar Shop - Your one-stop shop for guitars and accessories.">
+    <title>Migol's Guitar Shop</title>
+    <link rel="stylesheet" href="itcstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="cleared.png" width="125px" alt="Migol's Guitar Shop Logo">
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="aboutus.html">About us</a></li>
+                        <li><a href="addressandinfo.html">Address/Info</a></li>
+                        <li><a href="aboutus.html">About us</a></li>
+                        <li><a href="aboutus.html">About us</a></li>
+                    </ul>
+                </nav>
+                <img src="cartremove.png" width="30px" height="30px" alt="Shopping Cart" onclick="window.location.href='checkout.html'">
+                <img src="menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <h1>Is your guitar broken?<br>Just get yourself a new one!!!!!</h1>
+                    <p>You're the missing chord in my<br>life that completes my melody.</p>
+                    <a href="#" class="btn">Explore Now &#8594;</a>
+                </div>
+                <div class="col-2">
+                    <img src="kirkhammet.png" alt="Guitar Image">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Featured products -->
+    <div class="small-container">
+        <h2 class="title">Featured Product</h2>
+        <div class="row">
+            <!-- Product 1 -->
+            <div class="col-4">
+                <a href="product.html">
+                    <img src="vintage.jpg" alt="Vintage 1987 Cort Star Electric Guitar">
+                </a>
+                <h4>Vintage 1987 Cort Star Electric Guitar</h4>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                </div>
+                <p>$5000.00</p>
+                <button class="add-to-cart" data-name="Vintage 1987 Cort Star Electric Guitar" data-price="5000" data-image="vintage.jpg">Add to Cart</button>
+            </div>
+            <!-- Product 2 -->
+            <div class="col-4">
+                <a href="product(2).html">
+                    <img src="guitar2.jpg" alt="Double Neck Electric Guitar">
+                    <h4>Double Neck Electric Guitar</h4>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half"></i>
+                    </div>
+                    <p>$1400.00</p>
+                    <button class="add-to-cart" data-name="Double Neck Electric Guitar" data-price="1400" data-image="guitar2.jpg">Add to Cart</button>
+                </a>
+            </div>
+            <!-- Product 3 -->
+            <div class="col-4">
+                <a href="product(3).html">
+                    <img src="guitar3.jpg" alt="Angel Concept Flying-V Electric Guitar">
+                    <h4>Angel Concept Flying-V Electric Guitar</h4>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>$7000.00</p>
+                    <button class="add-to-cart" data-name="Angel Concept Flying-V Electric Guitar" data-price="7000" data-image="guitar3.jpg">Add to Cart</button>
+                </a>
+            </div>
+            <!-- Product 4 -->
+            <div class="col-4">
+                <a href="product(4).html">
+                    <img src="guitar5.jpg" alt="Customize Headless Electric Guitar">
+                    <h4>Customize Headless Electric Guitar</h4>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <p>$1000.00</p>
+                    <button class="add-to-cart" data-name="Customize Headless Electric Guitar" data-price="1000" data-image="guitar5.jpg">Add to Cart</button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Guitar Accessories -->
+    <div class="small-container">
+        <h2 class="title">Guitar Accessories</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="guitarcapo.png" alt="Guitar Capo">
+                <h4>Guitar Capo</h4>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>$20.00</p>
+                <button class="add-to-cart" data-name="Guitar Capo" data-price="20" data-image="guitarcapo.png">Add to Cart</button>
+            </div>
+            <div class="col-4">
+                <img src="guitartuner.png" alt="Guitar Tuner">
+                <h4>Guitar Tuner</h4>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                </div>
+                <p>$15.00</p>
+                <button class="add-to-cart" data-name="Guitar Tuner" data-price="15" data-image="guitartuner.png">Add to Cart</button>
+            </div>
+            <div class="col-4">
+                <img src="guitarstrings.png" alt="Guitar Strings">
+                <h4>Guitar Strings</h4>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>$10.00</p>
+                <button class="add-to-cart" data-name="Guitar Strings" data-price="10" data-image="guitarstrings.png">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android + mobile phone</p>
+                    <div class="app-logo">
+                        <img src="playstore.png" alt="Playstore Logo">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="cleared.png" alt="Migol's Guitar Shop Logo">
+                    <p>Our goal is to satisfy our customer</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                        <li>Twitter</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Bye-bye!!!</p>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const addToCartButtons = document.querySelectorAll('.add-to-cart');
+            const cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+            addToCartButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const name = button.getAttribute('data-name');
+                    const price = button.getAttribute('data-price');
+                    const image = button.getAttribute('data-image');
+
+                    const item = { name, price, image };
+                    cart.push(item);
+                    localStorage.setItem('cart', JSON.stringify(cart));
+
+                    alert(`${name} has been added to the cart.`);
+                });
+            });
+        });
+
+        function menutoggle() {
+            var MenuItems = document.getElementById("MenuItems");
+            if (MenuItems.style.maxHeight === "0px") {
+                MenuItems.style.maxHeight = "200px";
+            } else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+</body>
+
+</html>

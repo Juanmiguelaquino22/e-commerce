@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Migol's Guitar Shop - Your one-stop shop for guitars and accessories.">
+    <title>Migol's Guitar Shop</title>
+    <link rel="stylesheet" href="itcstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="cleared.png" width="125px" alt="Migol's Guitar Shop Logo">
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">Sign up</a></li>
+                    </ul>
+                </nav>
+                <img src="cartremove.png" width="30px" height="30px" alt="Shopping Cart">
+                <img src="menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+        </div>
+    </div>
+
+    <!-- Single Product Section -->
+    <div class="small-container single-product">
+        <div class="row">
+            <div class="col-2">
+                <img src="guitar2.jpg" width="100%" alt="Double Neck Electric Guitar">
+            </div>
+            <div class="col-2">
+                <p>Home/ Electric Guitar</p>
+                <h1>Double Neck Electric Guitar</h1>
+                <h4 id="price">$1400.00</h4>
+                <select>
+                    <option>Blue</option>
+                    <option>Red</option>
+                    <option>Green</option>
+                    <option>Pink</option>
+                    <option>Random Color</option>
+                </select>
+                <input type="number" id="quantity" value="1" min="1">
+                <a href="" class="btn"> Add To Cart</a>
+                <h3>Product Details <i class="fas fa-indent"></i></h3>
+                <br>
+                <p>If you want to look cool, get this guitar and flex it to the world!!!!</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Special Offer Section -->
+    <div class="offer">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="kirk's guitar.png" class="offer-img" alt="Kirk Hammett's Guitar">
+                </div>
+                <div class="col-2">
+                    <p>Exclusively Available on Migol's Guitar Shop</p>
+                    <h1>Kirk Hammett's Floyd Rose</h1>
+                    <small>Floyd Rose inspired ouija board, customized in the style of Kirk Hammet.</small>
+                    <a href="#" class="btn">Buy Now &#8594;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight === "0px") {
+                MenuItems.style.maxHeight = "200px";
+            } else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+
+        var priceElement = document.getElementById('price');
+        var quantityInput = document.getElementById('quantity');
+        var basePrice = 1400.00;
+
+        quantityInput.addEventListener('input', function() {
+            var quantity = parseInt(quantityInput.value);
+            if (!isNaN(quantity) && quantity > 0) {
+                var newPrice = basePrice * quantity;
+                priceElement.innerHTML = `$${newPrice.toFixed(2)}`;
+            } else {
+                quantityInput.value = 1;
+                priceElement.innerHTML = `$${basePrice.toFixed(2)}`;
+            }
+        });
+    </script>
+
+</body>
+
+</html>
